@@ -1,0 +1,3 @@
+{
+  "ignore": ["./.git/**/*.{yaml,yml}","./dist/**/*.{yaml,yml}","./node_modules/**/*.{yaml,yml}"]
+}

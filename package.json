@@ -1,0 +1,46 @@
+{
+  "bugs": {
+    "url": "https://github.com/evernaut/docker-image-base/issues"
+  },
+  "dependencies": {},
+  "description": "The Evernaut base Docker image.",
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "markdownlint": "^0.20.4",
+    "markdownlint-cli": "^0.23.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "yaml-lint": "^1.2.4"
+  },
+  "engines": {
+    "node": "12.16.3",
+    "npm": "6.14.4"
+  },
+  "homepage": "https://www.evernaut.com",
+  "keywords": [
+    "docker",
+    "docker-image",
+    "evernaut",
+    "evernaut-project-pan",
+    "evernaut-type-docker-image"
+  ],
+  "license": "MIT",
+  "name": "docker-image-base",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evernaut/docker-image-base"
+  },
+  "scripts": {
+    "lint": "npm-run-all -p lint:*",
+    "lint:eslint": "eslint \"**/*.{js,json,ts}\" \"**/.*.{js,json,ts}\"",
+    "lint:markdownlint": "markdownlint \"**/*.md\"",
+    "lint:yamllint": "yamllint \"**/*.{yaml,yml}\" \"**/.*.{yaml,yml}\"",
+    "test": "npm-run-all -p test:*",
+    "test:lint": "npm run lint"
+  },
+  "version": "0.0.0"
+}
