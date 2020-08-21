@@ -56,31 +56,31 @@ All issues that are open for contribution can be found via the [Status: Open](..
 - Build the image
 
   ```sh
-  docker build --no-cache -t evernaut/base:0.0.0 .
+  docker build --no-cache -t evernaut/base:1.0.0 .
   ```
 
 - Run a command on the image
 
   ```sh
-  docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:0.0.0 bash -c '<COMMAND>'
+  docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.0.0 bash -c '<COMMAND>'
   ```
 
 - Run the image in interactive mode
 
   ```sh
-  docker run -it --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:0.0.0 bash
+  docker run -it --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.0.0 bash
   ```
 
 - Install the npm dependencies
 
   ```sh
-  docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:0.0.0 bash -c 'npm ci --unsafe-perm'
+  docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.0.0 bash -c 'npm ci --unsafe-perm'
   ```
 
 - Lint the project
 
   ```sh
-  docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:0.0.0 bash -c 'npm run lint'
+  docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.0.0 bash -c 'npm run lint'
   ```
 
 ### Version Information
@@ -88,11 +88,11 @@ All issues that are open for contribution can be found via the [Status: Open](..
 - Ubuntu
 
   ```sh
-  docker run -t evernaut/base:0.0.0 bash -c 'cat /etc/os-release'
+  docker run -t evernaut/base:1.0.0 bash -c 'cat /etc/os-release'
   ```
 
 - Node.js
 
   ```sh
-  docker run -t evernaut/base:0.0.0 bash -c 'node -v'
+  docker run -t evernaut/base:1.0.0 bash -c 'node -v'
   ```

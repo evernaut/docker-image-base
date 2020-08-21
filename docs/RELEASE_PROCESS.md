@@ -43,7 +43,7 @@
 8. Stage, commit and push all changes
 
    ```sh
-   git add -A && git commit -m "#<RELEASE_ISSUE_NUMBER>: Release <VERSION>" && git push
+   git add -A && git commit -m "#<RELEASE_ISSUE_NUMBER>: Release <VERSION>" && git push --set-upstream origin issue/<RELEASE_ISSUE_NUMBER>
    ```
 
 9. [Create a pull request](../../../compare "Create a Pull Request")

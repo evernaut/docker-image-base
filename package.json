@@ -42,5 +42,5 @@
     "test": "npm-run-all -p test:*",
     "test:lint": "npm run lint"
   },
-  "version": "0.0.0"
+  "version": "1.0.0"
 }
