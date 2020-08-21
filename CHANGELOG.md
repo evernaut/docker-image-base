@@ -52,7 +52,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Semantic Version: None
 
-- None
+- #6: Use eslint-config-evernaut-base
 
 ## [1.0.0](https://github.com/evernaut/docker-image-base/releases/tag/1.0.0 "Release 1.0.0")
 

@@ -6,7 +6,7 @@
   "description": "The Evernaut base Docker image.",
   "devDependencies": {
     "eslint": "^7.7.0",
-    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-evernaut-base": "^1.0.1",
     "eslint-plugin-json": "^2.1.2",
     "eslint-plugin-prettier": "^3.1.4",
     "markdownlint": "^0.20.4",
@@ -39,8 +39,10 @@
     "lint:eslint": "eslint \"**/*.{js,json,ts}\" \"**/.*.{js,json,ts}\"",
     "lint:markdownlint": "markdownlint \"**/*.md\"",
     "lint:yamllint": "yamllint \"**/*.{yaml,yml}\" \"**/.*.{yaml,yml}\"",
-    "test": "npm-run-all -p test:*",
-    "test:lint": "npm run lint"
+    "lint-check-rules": "eslint --print-config \"./.eslintrc.js\" | eslint-config-prettier-check",
+    "test": "npm-run-all -p test:**",
+    "test:1": "npm run lint-check-rules",
+    "test:2": "npm run lint"
   },
   "version": "1.0.0"
 }

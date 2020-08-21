@@ -53,19 +53,19 @@ All issues that are open for contribution can be found via the [Status: Open](..
 
 ## Helpful Commands
 
-- Build the image
+- Build the Docker image
 
   ```sh
   docker build --no-cache -t evernaut/base:1.0.0 .
   ```
 
-- Run a command on the image
+- Run a command on the Docker image
 
   ```sh
   docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.0.0 bash -c '<COMMAND>'
   ```
 
-- Run the image in interactive mode
+- Run the Docker image in interactive mode
 
   ```sh
   docker run -it --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.0.0 bash
