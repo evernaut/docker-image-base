@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 ###
-# Install git (to support local development)
+# Install git and uuid-runtime (to support development)
 # Install jq (to parse json via CLI)
 # Install unzip and zip (to support GitHub actions artifact processing)
 # Install curl, tar and xz (to install Node.js)
@@ -10,6 +10,7 @@ ENV DEBIAN_FRONTEND="noninteractive"
 RUN apt-get update -y \
   && apt-get install -y \
   git \
+  uuid-runtime \
   jq \
   unzip \
   zip \

@@ -52,6 +52,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Semantic Version: None
 
+- None
+
+## [1.1.0](https://github.com/evernaut/docker-image-base/releases/tag/1.1.0 "Release 1.1.0")
+
+**Release Date:** 2020-08-24
+
+### Semantic Version: Minor
+
+- #8: Add UUID generation capability
+
+### Semantic Version: None
+
 - #6: Use eslint-config-evernaut-base
 
 ## [1.0.0](https://github.com/evernaut/docker-image-base/releases/tag/1.0.0 "Release 1.0.0")

@@ -6,6 +6,7 @@ The Evernaut base Docker image.
 
 - Ubuntu
 - Node.js
+- uuidgen
 - git
 - curl
 - jq
@@ -16,13 +17,13 @@ The Evernaut base Docker image.
 ### Dockerfile
 
 ```Dockerfile
-FROM evernaut/base:1.0.0
+FROM evernaut/base:1.1.0
 ```
 
 ### Docker CLI
 
 ```sh
-docker pull evernaut/base:1.0.0
+docker pull evernaut/base:1.1.0
 ```
 
 ## Process Guides
