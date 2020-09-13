@@ -37,11 +37,11 @@
 8. Build the Docker image
 
    ```sh
-   docker build --no-cache -t evernaut/base:1.1.0 .
+   docker build --no-cache -t evernaut/base:1.1.1 .
    ```
 
 9. Install the npm dependencies
 
    ```sh
-   docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.1.0 bash -c 'npm ci --unsafe-perm'
+   docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.1.1 bash -c 'npm ci --unsafe-perm'
    ```

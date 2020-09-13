@@ -39,6 +39,6 @@ Steps to reproduce the behavior:
 
 Would you be willing to submit a pull request to fix this bug? [ Yes / No ]
 
-## Notes
+## Notes (Optional)
 
 [ Any other information about the bug ... ]

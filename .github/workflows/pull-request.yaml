@@ -20,11 +20,11 @@ jobs:
         with:
           lfs: true
       - name: Build the Docker image
-        run: docker build --no-cache -t evernaut/base:1.1.0 .
+        run: docker build --no-cache -t evernaut/base:1.1.1 .
       - name: Install npm dependencies
-        run: docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.1.0 bash -c 'npm ci --silent'
+        run: docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.1.1 bash -c 'npm ci --silent'
       - name: Lint
-        run: docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.1.0 bash -c 'npm run lint'
+        run: docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.1.1 bash -c 'npm run lint -- --silent'
   lint-check-rules:
     name: (Pull Request) Lint Check Rules
     runs-on: ubuntu-20.04
@@ -34,8 +34,8 @@ jobs:
         with:
           lfs: true
       - name: Build the Docker image
-        run: docker build --no-cache -t evernaut/base:1.1.0 .
+        run: docker build --no-cache -t evernaut/base:1.1.1 .
       - name: Install npm dependencies
-        run: docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.1.0 bash -c 'npm ci --silent'
+        run: docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.1.1 bash -c 'npm ci --silent'
       - name: Lint Check Rules
-        run: docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.1.0 bash -c 'npm run lint-check-rules'
+        run: docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" evernaut/base:1.1.1 bash -c 'npm run lint-check-rules'

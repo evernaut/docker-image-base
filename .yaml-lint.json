@@ -1,3 +1,8 @@
 {
-  "ignore": ["./.git/**/*.{yaml,yml}","./dist/**/*.{yaml,yml}","./node_modules/**/*.{yaml,yml}"]
+  "ignore": [
+    "./.git/**/*.{yaml,yml}",
+    "./coverage/**/*.{yaml,yml}",
+    "./dist/**/*.{yaml,yml}",
+    "./node_modules/**/*.{yaml,yml}"
+  ]
 }

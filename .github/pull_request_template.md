@@ -17,6 +17,6 @@
   - [ ] The changes do not include dead code (where appropriate)
   - [ ] The changes remove all dead code that they introduce (where appropriate)
 
-## Notes
+## Notes (Optional)
 
 [ Any other information about the pull request ... ]

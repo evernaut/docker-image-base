@@ -1,5 +1,7 @@
 version: 1
 update_configs:
-  - directory: /
+  - default_labels:
+      - "Type: Automated"
+    directory: /
     package_manager: docker
     update_schedule: daily

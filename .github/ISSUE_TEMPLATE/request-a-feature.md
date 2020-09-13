@@ -29,6 +29,6 @@ assignees: ""
 
 Would you be willing to submit a pull request to add this feature? [ Yes / No ]
 
-## Notes
+## Notes (Optional)
 
 [ Any other information about the feature here ... ]

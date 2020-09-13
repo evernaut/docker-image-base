@@ -3,6 +3,6 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: ["evernaut-base"],
+  extends: ["evernaut-javascript"],
   root: true,
 };
